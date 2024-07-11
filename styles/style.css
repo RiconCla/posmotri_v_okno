@@ -16,6 +16,11 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 h1,
@@ -35,4 +40,82 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  display: flex;
+  width: 1140px;
+  height: 534px;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* height: 100%; */
+  gap: 26px;
+}
+
+.content__list {
+  height: 298px;
+  overflow: hidden scroll;
+  position: relative;
+}
+
+.result {
+  width: 711px;
+  height: 456px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.result__video-container {
+  width: inherit;
+  height: 386px;
+  position: relative;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  align-items: flex-start;
+  width: inherit;
+  height: inherit;
+}
+
+.content__card-link {
+  width: 394px;
+  height: 107px;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+}
+
+.content__video-card-description-container {
+  width: 100%;
+  height: 100%;
 }
