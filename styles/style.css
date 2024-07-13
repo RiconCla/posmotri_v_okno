@@ -148,23 +148,23 @@ ol {
 }
 
 .content__video-card-title {
+  max-width: 200px;
   padding-bottom: 6px;
+  overflow: hidden;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
-  max-width: 200px;
-  font-family: "Oswald", sans-serif;
 }
 
 .content__video-card-description {
+  flex-grow: 1;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
-  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -183,14 +183,15 @@ ol {
 
 .search-form__label {
   display: flex;
+  align-items: center;
   gap: 5px;
   width: fit-content;
-  align-items: center;
   cursor: pointer;
 }
 
 .search-form__textfield {
   width: 225px;
+  min-height: 27px;
   border: 1px solid transparent;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -202,7 +203,6 @@ ol {
   line-height: inherit;
   background-color: transparent;
   appearance: none;
-  min-height: 27px;
 }
 
 .search-form__textfield::placeholder {
@@ -222,6 +222,7 @@ ol {
 }
 
 .button {
+  min-height: 34px;
   border: 1px solid #fff;
   color: currentColor;
   font-family: inherit;
@@ -232,7 +233,6 @@ ol {
   background-color: transparent;
   cursor: pointer;
   white-space: nowrap;
-  min-height: 34px;
 }
 
 .button:focus {
